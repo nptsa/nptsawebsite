@@ -11,6 +11,7 @@
 
 h1 span{
   font-family: Roboto;
+  color: #293f6f;
 }
 
 html,
@@ -275,7 +276,7 @@ caption {
 
 .welcome {
   font-size: 3em;
-  color: #292929;
+  color: #293f6f;
   font-weight: 600;
   font-family: Roboto;
 }
@@ -541,7 +542,7 @@ a:hover{
 
 #activitiesheader {
   text-align: center;
-  color: #292929;
+  color: #293f6f;
   font-size: 3rem;
 }
 
@@ -552,7 +553,7 @@ a:hover{
 }
 
 #linksheader {
-  color: #292929;
+  color: #293f6f;
   font-size: 3rem;
 }
 
