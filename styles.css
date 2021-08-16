@@ -275,7 +275,7 @@ caption {
 
 .welcome {
   font-size: 3em;
-  color: #293f6f;
+  color: #292929;
   font-weight: 600;
   font-family: Roboto;
 }
@@ -541,18 +541,18 @@ a:hover{
 
 #activitiesheader {
   text-align: center;
-  color: #293f6f;
+  color: #292929;
   font-size: 3rem;
 }
 
 #linkstitle {
   background-image: url(https://i.ibb.co/9sVz9Ym/gears15.png);
-  padding: 5rem 2rem;
+  padding: 6rem 2rem;
   text-align: center;
 }
 
 #linksheader {
-  color: #293f6f;
+  color: #292929;
   font-size: 3rem;
 }
 
@@ -660,7 +660,7 @@ a:hover{
 
 .innercontent {
   padding: 4rem 0rem;
-  width: calc(100vw-1rem);
+  width: calc(100vw);
   margin-left: -1rem;
   display: flex;
   flex-direction: column;
@@ -694,10 +694,17 @@ a:hover{
   column-gap: 1.5rem;
 }
 
-@media (max-width: 63rem) {
+@media (max-width: 50rem) {
   .paragraph {
-    padding-left: 4.5rem;
-    padding-right: 4.5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media (max-width: 35rem) {
+  .paragraph {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
 }
 
