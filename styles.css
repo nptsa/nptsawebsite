@@ -1,0 +1,691 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+* {
+  box-sizing: border-box;
+  font-family: Raleway;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+caption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+:target {
+  display: block;
+  position: relative;
+  top: -5rem;
+  visibility: hidden;
+}
+
+#photo {
+  height: 3.25rem;
+  padding-left: 3rem;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.nptsa {
+  padding-bottom: 5px;
+  padding-left: 1rem;
+  font-size: 2em;
+}
+
+.navbar {
+  display: flex;
+  width: 100vw;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #293f6f;
+  color: white;
+  border-style: solid;
+  border-color: black;
+  border-width: 0px;
+  border-bottom-width: 1px;
+  z-index: 2;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links #ulelement {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.lielement {
+  height: 5rem;
+  padding-top: 0.55rem;
+  font-size: 1.5em;
+}
+
+.navbar-links .lielement {
+  list-style: none;
+  transition: 0.5s;
+}
+
+.navbar-links .lielement a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar-links .lielement:hover {
+  background-color: #005dac;
+}
+
+#space {
+  width: 3rem;
+}
+
+#space:hover {
+  background-color: #293f6f;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1.75rem;
+  right: 3rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2rem;
+  height: 1.3125rem;
+}
+
+#home {
+  border-style: solid;
+  border-width: 0px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 55rem) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #connects {
+    border-style: solid;
+    border-width: 0px;
+    border-color: black;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+  }
+
+  .title {
+    height: 5.05rem;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .lielement {
+    height: 70px;
+    padding-top: 12px;
+    font-size: 1.5em;
+  }
+
+  .navbar-links #ulelement {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links #ulelement .lielement {
+    text-align: center;
+  }
+
+  .navbar-links #ulelement .lielement a {
+    padding: 0.5rem 1rem;
+  }
+
+  #space {
+    display: none;
+  }
+
+  #home {
+    border-top-width: 1px;
+    border-color: black;
+  }
+
+  #officersnav {
+    border-color: black;
+    border-style: solid;
+    border-width: 0px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-links .lielement {
+    transition: 0s;
+  }
+}
+
+#welcome-section {
+  overflow-y: hidden;
+  height: 100vh;
+  background-color: #ececec;
+  background-image: url(https://i.ibb.co/KWpxhB2/circuit30.png);
+  text-align: center;
+  border-style: solid;
+  border-width: 0px;
+  border-bottom-width: 0px;
+  padding: 50vh 5rem;
+}
+
+#flexer {
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
+}
+
+.welcome2 {
+  font-size: 3em;
+  animation: blink 2s infinite;
+  font-family: "Poppins", sans-serif;
+}
+
+.welcome {
+  font-size: 3em;
+  color: #292929;
+}
+
+.welcome5:after {
+  animation: switch 16s infinite;
+  content: "New Providence TSA";
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  24% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  74% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes switch {
+  0% {
+    content: "New Providence TSA";
+  }
+  24% {
+    content: "New Providence TSA";
+  }
+  25% {
+    content: "Learning to lead in a technical world";
+  }
+  74% {
+    content: "Learning to lead in a technical world";
+  }
+  75% {
+    content: "New Providence TSA";
+  }
+  100% {
+    content: "New Providence TSA";
+  }
+}
+
+@keyframes swap {
+  0% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 700px) {
+  .welcome2 {
+    display: none;
+  }
+}
+
+#officers {
+  background-color: rgba(124, 130, 142, 0.4);
+  padding: 5rem 2rem;
+}
+
+.officer-image {
+  width: 20rem;
+}
+
+.officer-title {
+  width: 20rem;
+  height: 3rem;
+  color: black;
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 0.9rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  transition: 0.3s;
+}
+
+.name-title {
+  width: 20rem;
+  height: 3rem;
+  color: black;
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 0.2rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  border-top-width: 0px;
+  transition: 0.3s;
+}
+
+.tile2 {
+  padding-left: 10rem;
+}
+
+.hoverdiv {
+  background-color: #edeeef;
+  transition: 0.3s;
+  width: 20rem;
+}
+
+/* .hoverdiv:hover{
+  background-color: rgba(46, 56, 144, .5);
+} */
+
+#officers-header {
+  text-align: center;
+  color: #293f6f;
+  font-size: 3em;
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+
+.link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+}
+
+.officer-image {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  height: 20rem;
+}
+
+.officers-links {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 3rem;
+  grid-column-gap: 4vw;
+  justify-content: center;
+}
+
+@media (max-width: 75rem) {
+  .officers-links {
+    grid-template-columns: auto auto;
+    grid-column-gap: 3rem;
+  }
+
+  #officers-header {
+    font-size: 2.5rem;
+  }
+
+  .welcome {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 52rem) {
+  .officers-links {
+    grid-template-columns: auto;
+  }
+
+  #officers-header {
+    font-size: 2rem;
+    margin-left: calc(0.5 * (100vw - 25rem));
+    margin-right: calc(0.5 * (100vw - 25rem));
+  }
+}
+
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+#footer1 {
+  background-color: #293f6f;
+  display: flex;
+  padding: 0rem 5vw;
+  align-content: center;
+  color: white;
+  font-size: 1.25rem;
+}
+
+#create {
+  width: 50%;
+  padding: 2rem;
+}
+
+#year {
+  width: 50%;
+  padding: 2rem;
+}
+
+#pyear {
+  text-align: right;
+}
+
+#footer2 {
+  display: none;
+}
+
+@media (max-width: 38rem) {
+  #footer1 {
+    display: none;
+  }
+
+  #footer2 {
+    background-color: #293f6f;
+    display: flex;
+    padding: 0rem 5vw;
+    align-content: center;
+    color: white;
+    font-size: 1.25rem;
+  }
+
+  #create2 {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #pyear2 {
+    padding-left: 1rem;
+    font-size: 1.25rem;
+  }
+}
+
+a {
+  color: #293f6f;
+  transition: .2s;
+}
+
+a:hover{
+  color: #d2232a;
+}
+
+#activitestitle {
+  background-image: url(https://i.ibb.co/M73cBxP/circuits-long-2.png);
+  padding: 6rem;
+}
+
+#activitiesheader {
+  text-align: center;
+  color: #292929;
+  font-size: 3em;
+}
+
+#linkstitle {
+  background-image: url(https://i.ibb.co/9sVz9Ym/gears15.png);
+  padding: 6rem;
+  text-align: center;
+}
+
+#linksheader {
+  color: #292929;
+  font-size: 3em;
+}
+
+#helpfullinkset {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 20rem 20rem 20rem 20rem;
+  justify-content: center;
+  grid-row-gap: 1.25rem;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 96rem) {
+  #helpfullinkset {
+    grid-template-columns: 20rem 20rem 20rem;
+  }
+}
+
+@media (max-width: 75rem) {
+  #helpfullinkset {
+    grid-template-columns: 20rem 20rem;
+  }
+}
+
+@media (max-width: 55rem) {
+  #helpfullinkset {
+    grid-template-columns: 20rem;
+  }
+}
+
+.collapsible {
+  background-color: rgba(124, 130, 142, 0.4);
+  color: #3d4145;
+  cursor: pointer;
+  padding: 1.5rem 3rem;
+  width: 100%;
+  border-style: solid;
+  border-width: 0px;
+  border-bottom-width: 1px;
+  border-color: rgb(170, 169, 169);
+  text-align: left;
+  outline: none;
+  font-size: 2rem;
+}
+
+.bordertop {
+  border-top-width: 1px;
+}
+
+#teams {
+  height: 2.25rem;
+  margin-top: 0.25rem;
+}
+
+.collapsiblehead {
+  margin-top: 1rem;
+}
+
+.collapsible:after {
+  content: ">";
+  padding-left: 1rem;
+  padding-bottom: 0.25rem;
+  font-size: 2rem;
+  font-weight: bold;
+  float: right;
+  padding-right: 1rem;
+}
+
+.active:after {
+  content: "∨";
+  font-size: 1.829rem;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  width: 100vw;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+@media (max-width: 57rem) {
+  .collapsible,
+  .collapsible:after {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 45rem) {
+  .collapsible,
+  .collapsible:after {
+    font-size: 1.6rem;
+  }
+  .collapsible:after {
+    padding-right: 0rem;
+  }
+}
+
+.innercontent {
+  padding: 4rem 0rem;
+  width: calc(100vw-1rem);
+  margin-left: -1rem;
+  display: flex;
+  flex-direction: column;
+  column-gap: 2rem;
+  row-gap: 3rem;
+  align-content: center;
+  background-image: url(https://i.ibb.co/DLPV1t6/physics4.jpg);
+  border-style: solid;
+  border-width: 0px;
+  border-bottom-width: 1px;
+  border-color: rgb(170, 169, 169);
+}
+
+#teamsimage {
+  height: 17.5rem;
+  padding-top: 2rem;
+  padding-left: 1rem;
+}
+
+.paragraph {
+  font-size: 1.5rem;
+  font-weight: 500;
+  width: 100%;
+  padding-left: 6vw;
+  padding-right: 6vw;
+}
+
+.linkset {
+  display: flex;
+  justify-content: center;
+  column-gap: 1.5rem;
+}
+
+@media (max-width: 63rem) {
+  .paragraph {
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+  }
+}
+
+@media (max-width: 50rem) {
+  .paragraph {
+    font-size: 1.4rem;
+  }
+}
