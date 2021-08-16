@@ -7,6 +7,9 @@
   overflow-x: hidden;
 }
 
+
+
+
 html,
 body,
 div,
@@ -576,7 +579,9 @@ a:hover{
   background-color: rgba(124, 130, 142, 0.4);
   color: #3d4145;
   cursor: pointer;
+  height: 5.6rem;
   padding: 1.5rem 3rem;
+  overflow: hidden;
   width: 100%;
   border-style: solid;
   border-width: 0px;
@@ -585,6 +590,10 @@ a:hover{
   text-align: left;
   outline: none;
   font-size: 2rem;
+}
+
+#imagecollapse{
+  padding: 1.25rem 3rem;
 }
 
 .bordertop {
