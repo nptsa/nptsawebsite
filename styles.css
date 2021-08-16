@@ -1,10 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;546;600&family=Roboto:wght@300;400&display=swap');
+
 
 * {
   box-sizing: border-box;
   font-family: Raleway;
   scroll-behavior: smooth;
   overflow-x: hidden;
+}
+
+h1 span{
+  font-family: Roboto;
 }
 
 html,
@@ -78,8 +84,9 @@ caption {
 }
 
 #photo {
-  height: 3.25rem;
   padding-left: 3rem;
+  padding-bottom: .28rem;
+  height: 2.75rem;
 }
 
 .title {
@@ -90,7 +97,7 @@ caption {
 .nptsa {
   padding-bottom: 5px;
   padding-left: 1rem;
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 .navbar {
@@ -264,17 +271,18 @@ caption {
 .welcome2 {
   font-size: 3em;
   animation: blink 2s infinite;
-  font-family: "Poppins", sans-serif;
 }
 
 .welcome {
   font-size: 3em;
-  color: #292929;
+  color: #293f6f;
+  font-weight: 600;
+  font-family: Roboto;
 }
 
 .welcome5:after {
   animation: switch 16s infinite;
-  content: "New Providence TSA";
+  content: "New Prov TSA";
 }
 
 @keyframes blink {
@@ -392,9 +400,8 @@ caption {
 #officers-header {
   text-align: center;
   color: #293f6f;
-  font-size: 3em;
-  text-decoration: underline;
-  text-underline-offset: 0.25em;
+  font-size: 3rem;
+  text-decoration: none;
 }
 
 .link {
@@ -418,7 +425,7 @@ caption {
 }
 
 .officers-links {
-  margin-top: 5rem;
+  margin-top: 3.5rem;
   display: grid;
   grid-template-columns: auto auto auto;
   grid-row-gap: 3rem;
@@ -447,9 +454,13 @@ caption {
   }
 
   #officers-header {
-    font-size: 2rem;
+    font-size: 2.25rem;
     margin-left: calc(0.5 * (100vw - 25rem));
     margin-right: calc(0.5 * (100vw - 25rem));
+  }
+  
+  .officers-links {
+    margin-top: 2.5rem;
   }
 }
 
@@ -525,24 +536,24 @@ a:hover{
 
 #activitestitle {
   background-image: url(https://i.ibb.co/M73cBxP/circuits-long-2.png);
-  padding: 6rem;
+  padding: 5rem;
 }
 
 #activitiesheader {
   text-align: center;
-  color: #292929;
-  font-size: 3em;
+  color: #293f6f;
+  font-size: 3rem;
 }
 
 #linkstitle {
   background-image: url(https://i.ibb.co/9sVz9Ym/gears15.png);
-  padding: 6rem;
+  padding: 5rem 2rem;
   text-align: center;
 }
 
 #linksheader {
-  color: #292929;
-  font-size: 3em;
+  color: #293f6f;
+  font-size: 3rem;
 }
 
 #helpfullinkset {
@@ -568,7 +579,7 @@ a:hover{
 
 @media (max-width: 55rem) {
   #helpfullinkset {
-    grid-template-columns: 20rem;
+    grid-template-columns: auto;
   }
 }
 
@@ -616,7 +627,7 @@ a:hover{
   padding-right: 1rem;
 }
 
-.active:after {
+.active2:after {
   content: "∨";
   font-size: 1.829rem;
 }
@@ -695,3 +706,29 @@ a:hover{
     font-size: 1.4rem;
   }
 }
+
+@media (max-width: 40rem){
+  h1 p .nptsa{ 
+    font-size: 90%;
+  }
+  
+  #linksheader, #activitiesheader {
+    font-size: 2.5rem;
+  }
+  
+  .nptsa {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 40rem) {
+  @keyframes switch {
+    0% {
+      content: "New Prov TSA";
+    }
+    100%{
+      content: "New Prov TSA";
+    }
+  }
+}
+
