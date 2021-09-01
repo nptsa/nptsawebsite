@@ -139,7 +139,7 @@ caption {
 }
 
 #welcomepagebody{
-  position: relative;
+  position: fixed;       
 }
 
 .navbar-links #ulelement {
