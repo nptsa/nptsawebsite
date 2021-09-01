@@ -293,9 +293,15 @@ caption {
 
 #flexer {
   display: flex;
-  padding-top: 45vh;
+  padding-top: 47.5vh;
   justify-content: center;
   column-gap: 1rem;
+}
+
+@media (max-width: 40rem){
+  #flexer {
+  padding-top: 35vh;
+}
 }
 
 .welcome2 {
