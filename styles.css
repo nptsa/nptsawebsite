@@ -7,6 +7,12 @@ main {
   animation-fill-mode: forwards;
 }
 
+#welcomepagebody, #welcomehtml{
+  overflow-y: hidden;
+}
+
+
+
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
@@ -132,15 +138,6 @@ caption {
 
 .navbar-links {
   height: 100%;
-}
-
-#welcomepagebody, #welcomehtml{
-  overflow-y: hidden;
-}
-
-#welcomepagebody{
-  position: fixed;  
-  width: 100vw;     
 }
 
 .navbar-links #ulelement {
