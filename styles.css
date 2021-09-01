@@ -7,10 +7,6 @@ main {
   animation-fill-mode: forwards;
 }
 
-body {
-  overscroll-behavior-y: none;
-}
-
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
