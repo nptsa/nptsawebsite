@@ -134,6 +134,14 @@ caption {
   height: 100%;
 }
 
+#welcomepagebody, #welcomehtml{
+  overflow-y: hidden;
+}
+
+#welcomepagebody{
+  position: relative;
+}
+
 .navbar-links #ulelement {
   display: flex;
   margin: 0;
@@ -179,10 +187,6 @@ caption {
   justify-content: space-between;
   width: 2rem;
   height: 1.3125rem;
-}
-
-#welcomepagebody{
-  overflow: hidden;
 }
 
 #home {
@@ -279,7 +283,7 @@ caption {
 
 #welcome-section {
   overflow-y: hidden;
-  min-height: 100vh;
+  height: calc(100vh - 0rem);
   background-color: #ececec;
   background-image: url(https://i.ibb.co/KWpxhB2/circuit30.png);
   text-align: center;
