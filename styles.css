@@ -298,12 +298,6 @@ caption {
   column-gap: 1rem;
 }
 
-@media (max-width: 40rem){
-  #flexer {
-  padding-top: 35vh;
-}
-}
-
 .welcome2 {
   font-size: 3em;
   animation: blink 2s infinite;
