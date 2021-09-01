@@ -139,7 +139,8 @@ caption {
 }
 
 #welcomepagebody{
-  position: fixed;       
+  position: fixed;  
+  width: 100vw;     
 }
 
 .navbar-links #ulelement {
