@@ -293,13 +293,13 @@ caption {
   border-style: solid;
   border-width: 0px;
   border-bottom-width: 0px;
-  padding-top: 45vh;
 }
 
 #flexer {
   display: flex;
   justify-content: center;
   column-gap: 1rem;
+  padding-top: 45vh;
 }
 
 .welcome2 {
