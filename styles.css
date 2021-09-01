@@ -322,12 +322,6 @@ caption {
   content: "New Providence TSA";
 }
 
-@media (max-width: 40rem){
-  .welcome5:after {
-    content: "New Prov TSA"
-  }
-}
-
 @keyframes blink {
   0% {
     opacity: 0;
