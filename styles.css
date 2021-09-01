@@ -279,7 +279,7 @@ caption {
 
 #welcome-section {
   overflow-y: hidden;
-  height: calc(100vh - 0rem);
+  min-height: 100vh;
   background-color: #ececec;
   background-image: url(https://i.ibb.co/KWpxhB2/circuit30.png);
   text-align: center;
