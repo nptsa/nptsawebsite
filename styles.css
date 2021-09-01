@@ -1,6 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;546;600&family=Roboto:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;546;600&family=Roboto:wght@300;400&display=swap");
 
+main {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 * {
   box-sizing: border-box;
@@ -9,7 +23,7 @@
   overflow-x: hidden;
 }
 
-h1 span{
+h1 span {
   font-family: Roboto;
   color: #293f6f;
 }
@@ -86,7 +100,7 @@ caption {
 
 #photo {
   padding-left: 3rem;
-  padding-bottom: .28rem;
+  padding-bottom: 0.28rem;
   height: 2.75rem;
 }
 
@@ -172,6 +186,13 @@ caption {
   border-width: 0px;
 }
 
+#biotitle {
+  border-style: solid;
+  border-color: rgb(170, 169, 169);
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
+
 .toggle-button .bar {
   height: 3px;
   width: 100%;
@@ -179,7 +200,7 @@ caption {
   border-radius: 10px;
 }
 
-@media (max-width: 55rem) {
+@media (max-width: 60rem) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -231,6 +252,7 @@ caption {
 
   #home {
     border-top-width: 1px;
+    border-bottom-width: 1px;
     border-color: black;
   }
 
@@ -347,8 +369,12 @@ caption {
 }
 
 #officers {
-  background-color: rgba(124, 130, 142, 0.4);
+  background-image: url(https://i.ibb.co/DLPV1t6/physics4.jpg);
   padding: 5rem 2rem;
+}
+
+.blocker {
+  height: 5rem;
 }
 
 .officer-image {
@@ -426,7 +452,7 @@ caption {
 }
 
 .officers-links {
-  margin-top: 3.5rem;
+  margin-top: 3rem;
   display: grid;
   grid-template-columns: auto auto auto;
   grid-row-gap: 3rem;
@@ -459,7 +485,7 @@ caption {
     margin-left: calc(0.5 * (100vw - 25rem));
     margin-right: calc(0.5 * (100vw - 25rem));
   }
-  
+
   .officers-links {
     margin-top: 2.5rem;
   }
@@ -478,16 +504,17 @@ caption {
   align-content: center;
   color: white;
   font-size: 1.25rem;
+  height: 5rem;
 }
 
 #create {
   width: 50%;
-  padding: 2rem;
+  padding: 1.75rem;
 }
 
 #year {
   width: 50%;
-  padding: 2rem;
+  padding: 1.75rem;
 }
 
 #pyear {
@@ -510,46 +537,55 @@ caption {
     align-content: center;
     color: white;
     font-size: 1.25rem;
+    height: 5rem;
   }
 
   #create2 {
     width: 100%;
-    padding: 2rem;
+    padding: 1.75rem;
     display: flex;
     justify-content: center;
     text-align: center;
   }
 
   #pyear2 {
-    padding-left: 1rem;
+    padding-left: 1.75rem;
     font-size: 1.25rem;
   }
 }
 
 a {
   color: #293f6f;
-  transition: .2s;
+  transition: 0.2s;
 }
 
-a:hover{
+a:hover {
   color: #d2232a;
 }
 
-#activitestitle {
+.collapsetitle {
   background-image: url(https://i.ibb.co/M73cBxP/circuits-long-2.png);
   padding: 5rem;
 }
 
-#activitiesheader {
+.collapseheader {
   text-align: center;
   color: #293f6f;
   font-size: 3rem;
 }
 
-#linkstitle {
+#float {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  min-height: calc(100vh - 10rem);
   background-image: url(https://i.ibb.co/9sVz9Ym/gears15.png);
-  padding: 6rem 2rem;
+}
+
+#linkstitle {
+  padding: 10vh 2rem;
   text-align: center;
+  width: 100vw;
 }
 
 #linksheader {
@@ -601,7 +637,7 @@ a:hover{
   font-size: 2rem;
 }
 
-#imagecollapse{
+#imagecollapse {
   padding: 1.25rem 3rem;
 }
 
@@ -683,7 +719,7 @@ a:hover{
 
 .paragraph {
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 400;
   width: 100%;
   padding-left: 6vw;
   padding-right: 6vw;
@@ -715,15 +751,16 @@ a:hover{
   }
 }
 
-@media (max-width: 40rem){
-  h1 p .nptsa{ 
+@media (max-width: 40rem) {
+  h1 p .nptsa {
     font-size: 90%;
   }
-  
-  #linksheader, #activitiesheader {
+
+  #linksheader,
+  .collapseheader {
     font-size: 2.5rem;
   }
-  
+
   .nptsa {
     font-size: 1.75rem;
   }
@@ -734,7 +771,7 @@ a:hover{
     0% {
       content: "New Prov TSA";
     }
-    100%{
+    100% {
       content: "New Prov TSA";
     }
   }
