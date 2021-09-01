@@ -293,7 +293,7 @@ caption {
 
 #flexer {
   display: flex;
-  padding-top: 49vh;
+  padding-top: 48vh;
   justify-content: center;
   column-gap: 1rem;
 }
