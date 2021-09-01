@@ -7,12 +7,6 @@ main {
   animation-fill-mode: forwards;
 }
 
-#welcomepagebody, #welcomehtml{
-  overflow-y: hidden;
-}
-
-
-
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
@@ -138,6 +132,16 @@ caption {
 
 .navbar-links {
   height: 100%;
+}
+
+#welcomepagebody,
+#welcomehtml {
+  overflow-y: hidden;
+}
+
+#welcomepagebody {
+  position: fixed;
+  width: 100vw;
 }
 
 .navbar-links #ulelement {
@@ -289,11 +293,11 @@ caption {
   border-style: solid;
   border-width: 0px;
   border-bottom-width: 0px;
+  padding: 45vh;
 }
 
 #flexer {
   display: flex;
-  padding-top: 50vh;
   justify-content: center;
   column-gap: 1rem;
 }
@@ -798,5 +802,3 @@ body {
     }
   }
 }
-
-
