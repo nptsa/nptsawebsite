@@ -301,7 +301,7 @@ caption {
 
 @media (hover: none) and (pointer: coarse) and (max-width: 40rem) {
   #flexer {
-  padding-top: 43.25vh;
+  padding-top: 42.5vh;
 }
 }
 
@@ -319,7 +319,13 @@ caption {
 
 .welcome5:after {
   animation: switch 16s infinite;
-  content: "New Prov TSA";
+  content: "New Providence TSA";
+}
+
+@media (max-width: 40rem){
+  .welcome5:after {
+    content: "New Prov TSA"
+  }
 }
 
 @keyframes blink {
