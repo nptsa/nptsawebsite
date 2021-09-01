@@ -770,6 +770,17 @@ body {
   }
 }
 
+@media (max-width: 59rem) {
+  @keyframes switch {
+    0% {
+      content: "New Providence TSA";
+    }
+    100% {
+      content: "New Providence TSA";
+    }
+  }
+}
+
 @media (max-width: 40rem) {
   @keyframes switch {
     0% {
@@ -780,3 +791,5 @@ body {
     }
   }
 }
+
+
