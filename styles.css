@@ -482,32 +482,6 @@ caption {
   justify-content: center;
 }
 
-.gallery-links {
-  margin-top: 3rem;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-row-gap: 1rem;
-  grid-column-gap: 1rem;
-  justify-content: center;
-}
-
-@media (max-width: 94rem) {
-  .gallery-links {
-  grid-template-columns: auto auto auto;
-  }
-}
-
-@media (max-width: 73rem) {
-  .gallery-links {
-  grid-template-columns: auto auto;
-  }
-}
-
-@media (max-width: 52rem) {
-  .gallery-links {
-  grid-template-columns: auto;
-  }
-}
 
 @media (max-width: 75rem) {
   .officers-links {
@@ -828,4 +802,31 @@ body {
       content: "New Providence TSA";
     }
   }
-} 
+}
+
+.gallery-links {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-row-gap: 1rem;
+  grid-column-gap: 1rem;
+  justify-content: center;
+}
+
+@media (max-width: 94rem) {
+  .gallery-links {
+  grid-template-columns: auto auto auto;
+  }
+}
+
+@media (max-width: 73rem) {
+  .gallery-links {
+  grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 52rem) {
+  .gallery-links {
+  grid-template-columns: auto;
+  }
+}
