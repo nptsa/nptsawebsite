@@ -497,7 +497,7 @@ caption {
   }
 }
 
-@media (max-width: 82rem) {
+@media (max-width: 77rem) {
   .gallery-links {
   grid-template-columns: auto auto;
   }
