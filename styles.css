@@ -829,14 +829,3 @@ body {
     }
   }
 }
-
-@media (max-width: 40rem) {
-  @keyframes switch {
-    0% {
-      content: "New Prov TSA";
-    }
-    100% {
-      content: "New Prov TSA";
-    }
-  }
-}
