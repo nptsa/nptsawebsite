@@ -491,13 +491,13 @@ caption {
   justify-content: center;
 }
 
-@media (max-width: 104rem) {
+@media (max-width: 94rem) {
   .gallery-links {
   grid-template-columns: auto auto auto;
   }
 }
 
-@media (max-width: 77rem) {
+@media (max-width: 73rem) {
   .gallery-links {
   grid-template-columns: auto auto;
   }
