@@ -582,8 +582,24 @@ a {
   transition: 0.2s;
 }
 
+
 a:hover {
   color: #d2232a;
+}
+
+#linkfix:hover{
+  color:transparent;
+}
+
+.nptsa{
+  color:white;
+  text-decoration: none;
+  transition: 0s;
+}
+
+.nptsa:hover{
+  color:white;
+  text-decoration: none;
 }
 
 .collapsetitle {
